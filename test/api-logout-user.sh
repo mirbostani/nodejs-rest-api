@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+curl --verbose \
+  --request DELETE \
+  --header 'Content-Type:application/json' \
+  --header 'Authorization: JWT eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTkwOGRhYmI3Y2U2NTZjZjcxZjg1MmFjY2I4NmY0Nzc0ZDJiYjU3NmQ2M2Y0NjY5MDIwZmRmMGUzYzExMTQ5NCIsImlhdCI6MTY1NDA4NzYxNiwiZXhwIjoxNjU0NjkyNDE2LCJpc3MiOiJjbGltZWRvIn0.i0vYr6FxkzS3yYuKexTwx6Y0RjpSClKFYgetGfn2UTkhxNT66VZj-3W8L99wiF8WgoMuFlclme2e630Zjui-MEprPEjYv8-Zkmqqx5rRGZ6mQncV4VzYBuakDplOQX1al2M8ywUSNiPsze_gOLRJcT3SI4O8DYqpER6Rba8dQ1ObbHa2GwtD1tkjMbjMZU-jj2ubdxN1QibnQoYaZiZM7orycExsAUvTg6jS39drpLTUYoBdrZ_YclvHzG46T6hNcBkOxS-o_E-JTluB93k3TBpJWAYiVuuID22VCwWXac4oo2iDIJNMHVZJyUUlF3ge1rULq3YY_nJMMcFKw3TS7Q' \
+  http://localhost:7000/api/users/m.mirbostani@gmail.com
