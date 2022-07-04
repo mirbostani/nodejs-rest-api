@@ -1,0 +1,79 @@
+# Configuration
+
+server:
+  name: rest-api-nodejs
+  host: localhost
+  port: 7000
+  x_powered_by: MIRBOSTANI
+  static_prefix: /static
+
+  # Number of workers
+  workers: 1
+
+  # Websites you wish to allow to connect
+  access_control_allow_origin: "*"
+
+  # Request methods you with to allow
+  access_control_allow_methods: GET,POST,OPTIONS,PUT,PATCH,DELETE
+
+  # Request headers you wish to allow
+  access_control_allow_headers: X-Requested-With,Content-Type
+
+  # Request cookies allowed (e.g. in sessions)
+  access_control_allow_credentials: false
+
+mongodb:
+  host: localhost
+  port: 27017
+  database: mydatabase
+
+  # Enable authentication via username and password
+  authenticate: false
+  username: mydatabase
+  password: "123456"
+
+  # Automatically build index based on model schema
+  auto_index: false
+
+  # Maintain up to X socket connections
+  max_pool_size: 10
+
+  # Keep trying to send operations for X seconds
+  server_selection_timeout_ms: 5000
+
+  # Give up initial connection after 10 seconds
+  connect_timeout_ms: 10000
+
+  # Close sockets after x seconds of inactivity
+  socket_timeout_ms: 45000
+
+  # Use IPv4, skip trying IPv6
+  family: 4
+
+  # Enable mongoose debug mode
+  debug: false
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  auth_password: "abc123" # long pass required
+  user_login_retry: 5
+  user_login_locked_seconds: 300
+  debug_mode: false
+
+api:
+  root: /api
+
+bcrypt:
+  rounds: 10
+
+token:
+  algorithm: "RS256"
+  expires_in: 604800
+  payload_secret: "abcd1234"
+  issuer: "mirbostani"
+
+admin:
+  fullname: "Morteza Mirbostani"
+  email: "admin@example.com"
+  password: "admin123"
